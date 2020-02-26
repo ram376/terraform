@@ -3,7 +3,7 @@ agent any
      stages {
          stage ('git') {
          steps {
-             git 'http://13.231.128.96/rkkrao/terra-jenk-s3.git'
+             git 'https://github.com/ram376/terraform.git'
             }
         }
     stage ('terraform') {
