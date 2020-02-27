@@ -21,6 +21,5 @@ terraform {
     bucket = "terra-s3-ram"
     key    = "terraform.tfstate"
     region = "ap-northeast-1"
-  }
 }
 }
