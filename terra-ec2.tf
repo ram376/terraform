@@ -16,6 +16,7 @@ tags = {
   Name = "ec2-insta"
 }
 }
+
 terraform {
   backend "s3" {
     bucket = "terra-s3-ram"
