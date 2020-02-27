@@ -2,7 +2,7 @@ provider "aws" {
   region = "ap-northeast-1"
 }
 
-resource "aws_instance" "ec2-insta" {
+resource "aws_instance" "ec2-insta1" {
 ami = "ami-026839cf0f1f3928d"
 instance_type = "t2.micro"
 subnet_id = "subnet-5069af18"
@@ -13,7 +13,7 @@ user_data = <<EOT
              sudo systemctl start amazon-ssm-agent
 EOT
 tags = {
-  Name = "ec2-insta"
+  Name = "ec2-insta1"
 }
 }
 
