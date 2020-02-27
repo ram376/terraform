@@ -9,6 +9,7 @@ agent any
     stage ('terraform') {
              steps {
                     echo "executing terraform"
+                     sh 'terraform validate'
                      sh 'terraform init'
                      sh 'terraform plan'
                      sh 'terraform apply -auto-approve'
