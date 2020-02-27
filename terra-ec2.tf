@@ -7,7 +7,7 @@ ami = "ami-026839cf0f1f3928d"
 instance_type = "t2.micro"
 subnet_id = "subnet-5069af18"
 iam_instance_profile = "ssm-ec2role"
-user_data = <<-EOT
+user_data = <<EOT
              #!/bin/bash
              sudo yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
              sudo systemctl start amazon-ssm-agent
